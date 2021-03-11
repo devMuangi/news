@@ -7,8 +7,8 @@ const Toolbar = () => {
     return(
         <div className={styles.main}>
             <div onClick={() => router.push('/')}>Home</div>
-            <div onClick={() => router.push('/feed/1')}>Home</div>
-            <div onClick={() => router.push('/about')}>Home</div>
+            <div onClick={() => router.push('/feed/1')}>News</div>
+            <div onClick={() => router.push('/about')}>About</div>
         </div>
     )
 }
