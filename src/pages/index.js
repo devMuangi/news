@@ -5,6 +5,10 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>devmuangi</title>
+
+      </Head>
       <Toolbar />
       <div>
       <h1>Hello</h1>
