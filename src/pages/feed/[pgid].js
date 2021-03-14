@@ -1,12 +1,12 @@
 import styles from '../../styles/Feed.module.css';
 import { useRouter } from 'next/router';
-import Toolbar from '../../components/toolbar';
+import Toolbar from '../../components/Toolbar';
+
 const Feed = ({ pageNumber, articles })=> {
     console.log(articles, pageNumber)
     const router = useRouter();
     return (
         <div className='page-container'>
-            <Toolbar/>
          <div className={styles.main}>
             {articles.map((article,index)=>(
                 <div key={index} className={styles.post}>

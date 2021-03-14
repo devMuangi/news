@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Toolbar from '../components/toolbar';
+import Toolbar from '../components/Toolbar';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <Head>
         <title>devmuangi</title>
-
+ 
       </Head>
       <Toolbar />
       <div>
