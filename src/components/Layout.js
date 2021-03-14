@@ -1,15 +1,15 @@
 import styles from "../styles/Layout.module.css"
+import News from "./News";
 import Toolbar from "./Toolbar";
 
-const Layout = ({Children}) => {
+const Layout = ({children}) => {
 
     return(
         <>
         <Toolbar/>
             <div className={styles.container}>
             <main className={styles.main}>
-                <Toolbar/>
-                {Children}
+                {children}
             </main>
         </div>
         </>
