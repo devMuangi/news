@@ -1,12 +1,13 @@
 import styles from '../../styles/Feed.module.css';
 import { useRouter } from 'next/router';
-import Toolbar from '../../components/toolbar';
+
+
 const Feed = ({ pageNumber, articles })=> {
     console.log(articles, pageNumber)
     const router = useRouter();
     return (
-        <div className='page-container'>
-            <Toolbar/>
+        
+    <div className='page-container'>
          <div className={styles.main}>
             {articles.map((article,index)=>(
                 <div key={index} className={styles.post}>
@@ -15,8 +16,8 @@ const Feed = ({ pageNumber, articles })=> {
                     {!!article.urlToImage && <img src={article.urlToImage}/>}
          </div>
             ))}
-        </div>
-        <div className={styles.paginator}>
+         </div>
+         <div className={styles.paginator}>
             <div onClick={() => {
                 if (pageNumber > 1){
                     router.push(`/feed/${pageNumber - 1}`).then(() => window.scrollTo(0,0));
@@ -31,8 +32,9 @@ const Feed = ({ pageNumber, articles })=> {
                     next page
             </div>
         
+          </div>
         </div>
-        </div>
+        
     );
 };
 
