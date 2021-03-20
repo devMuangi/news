@@ -7,8 +7,8 @@ const HomeItem = ({article}) => {
     return(
         <>
          <Link href="/article/[id]" as={`/article/${article.id}`}>
-             <div>
-             <a className={styles.card}>
+             <div className={styles.card}>
+             <a className={styles.link}>
                 <h3>{article.title}</h3>
                 <p>{article.body}</p>
             </a>

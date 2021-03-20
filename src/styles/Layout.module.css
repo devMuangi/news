@@ -1,18 +1,13 @@
 .container {
     min-height: 100vh;
-    padding: 0 0.5rem;
-    display: flex;
-    flex-direction:column;
-    justify-content: flex-start;
-    align-items: center;
-    background: chocolate;
+    display: grid;
+  align-items: center;
+  grid-gap: 1rem;
+  justify-content: center;
+   grid-template-columns: repeat(auto-fit, minmax(240px, 50vw));
+
 }
-.main{
-    padding: 5rem 0;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1.25rem;
+.main {
+
+    
 }
