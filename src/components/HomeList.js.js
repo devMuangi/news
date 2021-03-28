@@ -7,7 +7,7 @@ const HomeList = ({articles}) => {
 
     return(
         
-        <div className={ styles.grid}>
+        <div>
         {articles.map((article) => (
           <HomeItem article={article}/>
         ))}
