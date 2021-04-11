@@ -1,0 +1,40 @@
+.borderCircle {
+    border-radius: 9999px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* gap: 10rem; */
+    /* padding: 10rem; */
+    
+}
+.container_left{
+    border: 1px solid black;
+}
+.container_right{
+    border: 1px solid black;
+
+}
+
+@media (max-width: 400px){
+
+   .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .container_left{
+     
+       flex-grow: 2;
+       background-color: aqua;
+   }
+   .container_right{
+   
+     flex-grow: 8;
+     background-color: brown;
+
+}
+
+}
