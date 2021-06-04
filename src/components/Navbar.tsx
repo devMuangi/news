@@ -1,13 +1,14 @@
 import React from 'react';
-import { Box, Divider, Flex, Heading, Link } from '@chakra-ui/react';
+import { Box, Divider, Flex, Heading, Link,Button, useColorMode} from '@chakra-ui/react';
 import { useRouter } from 'next/router';
 
 const Navbar: React.FC<{}> = () => {
   const router = useRouter();
+  const { colorMode , toggleColorMode} = useColorMode()
 
   return (
     <>
-      <Flex justify="center" m={4}>
+      <Flex justify="center" align="center" m={4}>
         <Heading onClick={() => router.push('/')} as="button">
           devMuangi
         </Heading>
@@ -20,6 +21,21 @@ const Navbar: React.FC<{}> = () => {
             }>
                 about
             </Link>
+        </Box>
+
+        <Box>
+            <Link 
+            onClick={() => router.push('/about')}
+            fontWeight={
+                router.pathname === '/about' ? 'extrabold' : 'normal'
+            }>
+                github
+            </Link>
+        </Box>
+        <Box>
+              <Button onClick={toggleColorMode}>
+        Toggle {colorMode === "light" ? "Dark" : "Light"}
+      </Button>
         </Box>
       </Flex>
       <Divider
