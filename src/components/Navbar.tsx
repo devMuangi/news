@@ -9,29 +9,6 @@ const Navbar: React.FC<{}> = () => {
   return (
     <>
       <Flex justify="center" align="center" m={4}>
-        <Heading onClick={() => router.push('/')} as="button">
-          devMuangi
-        </Heading>
-  
-        <Box>
-            <Link 
-            onClick={() => router.push('/about')}
-            fontWeight={
-                router.pathname === '/about' ? 'extrabold' : 'normal'
-            }>
-                about
-            </Link>
-        </Box>
-
-        <Box>
-            <Link 
-            onClick={() => router.push('/about')}
-            fontWeight={
-                router.pathname === '/about' ? 'extrabold' : 'normal'
-            }>
-                github
-            </Link>
-        </Box>
         <Box>
               <Button onClick={toggleColorMode}>
         Toggle {colorMode === "light" ? "Dark" : "Light"}
