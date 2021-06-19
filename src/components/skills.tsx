@@ -14,9 +14,9 @@ const Skills = () => {
             <SkillCard
               key={index}
               name={tool.name}
-              image={tool.image}
-              platform={"web"}
-              link={tool.link}
+              // image={tool.image}
+              // platform={"web"}
+              // link={tool.link}
             />
           ))}
         </SimpleGrid>
